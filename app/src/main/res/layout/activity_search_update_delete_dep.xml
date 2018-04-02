@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sufiyananis.sqliteassignment.SearchUpdateDelete">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/searchb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/editText2"
+        android:text="Search" />
+
+    <EditText
+        android:id="@+id/ett2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deleteb"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/ett3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:layout_toEndOf="@+id/button"
+        android:ems="10"
+        android:hint="Reg No#"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/et4"
+        app:layout_constraintStart_toStartOf="@+id/et2"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
+
+    <EditText
+        android:id="@+id/ett4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ett3"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/button"
+        android:ems="10"
+        android:hint="Dept"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et5"
+        app:layout_constraintStart_toStartOf="@+id/et3"
+        app:layout_constraintTop_toBottomOf="@+id/et3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et5"
+        android:layout_marginBottom="113dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et5" />
+
+    <Button
+        android:id="@+id/updateb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ett2"
+        android:layout_alignBottom="@+id/ett2"
+        android:layout_alignStart="@+id/deleteb"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/deleteb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ett4"
+        android:layout_alignStart="@+id/searchb"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/ss1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="37dp"
+        />
+
+    <TextView
+        android:id="@+id/ss2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ss1"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="36dp"
+        android:layout_toEndOf="@+id/ss1" />
+
+    <TextView
+        android:id="@+id/ss3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/s2"
+        android:layout_below="@+id/ss2" />
+
+</RelativeLayout>
+
